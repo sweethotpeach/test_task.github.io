@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(./fonts/gilroy-medium.ttf);
+}
+  
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(./fonts/gilroy-bold.ttf);
+}
+  
+.formWrapper {
+    font-family: 'Gilroy-Medium';
+    padding: 35px;
+    margin: 20px auto;
+    width: 405px;
+    height: 500px;
+    border-radius: 0px 30px 30px 30px;
+    background-color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+html {
+    background-color: #E5E5E5;
+    color: #1C154E;
+}
+  
+h2 {
+    margin: 0;
+    margin-bottom: 12px;
+}
+  
+.labelWrapper {
+    margin-bottom: 12px;
+}
+  
+.blockWrapper {
+    margin-bottom: 25px;
+  
+}
+  
+input {
+    border: none;
+    outline: none;
+    width: 205px;
+}
+  
+.inputWrapper {
+    border-bottom: 1px solid #E1E3EE;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+}
+  
+input::placeholder {
+    color: #D0D3E2;
+}
+  
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+  
+.addButton {
+    border: none;
+    background-color: #fff;
+    color: #23C967;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+}
+  
+.addButton svg {
+    margin-left: 5px;
+}
+  
+.securePaymentParagraph {
+    text-align: center;
+}
+  
+.securePaymentParagraph svg {
+    margin-right: 4px;
+}
+  
+.submitAndPayBtn {
+    background-color: #23C967;
+    display: block;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    padding: 10px 72px;
+    font-size: 20px;
+    font-family: 'Gilroy-Medium';
+    border-radius: 15px;
+    margin-top: 19px;
+}
+
+input[type=radio] {
+    width: 13px;
+    margin-right: 15px;
+    color: #23C967;
+}
+
+.radioItemWrapper::hover {
+    background-color: #E1E3EE;
+}
+
+.radioWrapper {
+    border-radius: 25px;
+    border: 1px solid #E1E3EE;
+}
+
+.lastRadioItem {
+    border-bottom: none;
+}
+
+.continueBtn {
+    display: block;
+    margin: 23px auto;
+    background-color: #23C967;
+    color: #fff;
+    padding: 12px 160px;
+    text-align: center;
+    width: auto;
+    border-radius: 15px;
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    border: none;
+}
+
+.PaymentParagraph {
+    line-height: 30px;
+}
+
+.backBtn {
+    display: block;
+    margin: 23px auto;
+    background-color: #23C967;
+    color: #fff;
+    padding: 12px 175px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    border: none;
+}
+
+.succPaymentImg {
+    display: block;
+    margin: 20% auto 30% auto;
+}
+
+.failPaymentImg {
+    display: block;
+    margin: 5% auto 10% auto;
+}
+
+.redBtn {
+    background-color: #EA717F;
+    padding: 12px 120px;
+}
+
+.modalWindow {
+    visibility: hidden;
+    position: fixed;
+    z-index: 2;
+    top: 0.5%;
+    left: 32.5%;
+}
+
+.modalWindowPayment {
+    visibility: hidden;
+    position: fixed;
+    z-index: 3;
+    top: 1%;
+    left: 34%;
+}
+
+.modalWindowActive {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.productsBox {
+    height: 294px;
+    margin-bottom: 30px;
+}
+
+.labelForRadioInput {
+    display: block;
+    line-height: 19px;
+    padding: 15px;
+    border-bottom: 1px solid #E1E3EE;
+    color: #1C154E;
+}
+
+
+.spanGreyText {
+    color: #A7A2CB;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+.lastLabel {
+    border: none;
+}

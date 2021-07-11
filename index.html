@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class='formWrapper' id="formWrapper">
+        <div class="productsBox" id="productsBox">
+            <div class='blockWrapper'>
+                <h2>Info</h2>
+                <div class='labelWrapper'>
+                    <label for='email'>Enter tour email adress</label>
+                </div>
+                <div class='inputWrapper'>
+                    <input id='email' placeholder='team@checkforpatent.com' />
+                </div>
+            </div>
+            <div class='blockWrapper productItem' id="productItem">
+                <h2>Product <span>1</span></h2>
+                <div class='labelWrapper'>
+                    <label for='keyword'>Enter main keyword for the product</label>
+                </div>
+                <div class='inputWrapper'>
+                    <input placeholder='for example, silicone wine cup' />
+                </div>
+                <div class='labelWrapper'>
+                    <label>Enter link for the similar product as a reference</label>
+                </div>
+                <div class='inputWrapper'>
+                    <input placeholder='https://...' />
+                </div>
+            </div>
+        </div>
+        <button class='addButton' id="addButton">Add more products 
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.49994 3.40454C6.24349 3.40454 6.03564 3.61239 6.03564 3.86883V9.13074C6.03564 9.38718 6.24349 9.59503 6.49994 9.59503C6.75638 9.59503 6.96423 9.38718 6.96423 9.13074V3.86883C6.96423 3.61239 6.75638 3.40454 6.49994 3.40454Z" fill="#23C967"/>
+          <path d="M9.13147 6.03564H3.86957C3.61312 6.03564 3.40527 6.24349 3.40527 6.49994C3.40527 6.75638 3.61312 6.96423 3.86957 6.96423H9.13147C9.38791 6.96423 9.59576 6.75638 9.59576 6.49994C9.59576 6.24349 9.38791 6.03564 9.13147 6.03564Z" fill="#23C967"/>
+          <path d="M6.5 0C2.91586 0 0 2.91586 0 6.5C0 10.0841 2.91586 13 6.5 13C10.0841 13 13 10.0841 13 6.5C13 2.91586 10.0841 0 6.5 0ZM6.5 12.0714C3.42781 12.0714 0.92856 9.57219 0.92856 6.5C0.92856 3.42781 3.42781 0.92856 6.5 0.92856C9.57219 0.92856 12.0714 3.42781 12.0714 6.5C12.0714 9.57219 9.57219 12.0714 6.5 12.0714Z" fill="#23C967"/>
+          </svg> 
+        </button>
+        <p>We offer discount up to 36% multiple checks</p>
+        <button class='submitAndPayBtn' id="submitAndPayBtn">Submit and Pay <span id="price">24.99</span> USD</button>
+        <p class='securePaymentParagraph'>
+          <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.78094 7.22247C8.63507 7.04746 8.45806 6.96001 8.24963 6.96001H7.99978V5.15991C7.99978 4.00993 7.65612 3.02252 6.96859 2.19752C6.28111 1.37248 5.45835 0.959961 4.4999 0.959961C3.54147 0.959961 2.71855 1.37248 2.03112 2.19748C1.34359 3.02252 0.999938 4.0099 0.999938 5.15991V6.96001H0.749974C0.541712 6.96001 0.364589 7.04746 0.218742 7.22247C0.0728959 7.39736 0 7.6099 0 7.86005V13.26C0 13.5099 0.0729232 13.7225 0.218742 13.8976C0.364589 14.0724 0.541712 14.16 0.749974 14.16H8.24982C8.45825 14.16 8.63523 14.0725 8.78114 13.8976C8.92685 13.7225 8.99988 13.5099 8.99988 13.26V7.85995C8.99999 7.61 8.92685 7.39749 8.78094 7.22247ZM6.49986 6.96001H2.49994V5.15991C2.49994 4.49745 2.69529 3.93178 3.0859 3.46311C3.47656 2.99438 3.94787 2.76006 4.49998 2.76006C5.05214 2.76006 5.52334 2.99435 5.91403 3.46311C6.30454 3.93175 6.49986 4.49745 6.49986 5.15991V6.96001Z" fill="#AFB4CC"/>
+          </svg>
+          Secure payment with Stripe
+        </p>
+    </div>
+    <div class="modalWindow" id="modalWindow">
+        <div class='formWrapper'>
+            <h2>Adding more products</h2>
+            <div class='labelWrapper'>
+                <label for='email'>The more items you check, the better the price.</label>
+            </div>
+            <div class="radioWrapper">
+                <label class="labelForRadioInput"> <input class="radioInput" type="radio" name="checked" value="4"> 
+                    <span>5 products for 80 usd / 16$ each</span>
+                    <br>
+                    <span class="spanGreyText">you save 36% on each patent check</span>
+                </label>
+    
+                <label class="labelForRadioInput"> <input class="radioInput" type="radio" name="checked" value="3">
+                    <span> 4 products for 72 usd / 18$ each</span>
+                    <br>
+                    <span class="spanGreyText">you save 28% on each patent check</span>
+                </label>
+                <label class="labelForRadioInput"><input class="radioInput" type="radio" name="checked" value="2">
+                    <span>3 products for 60 usd / 20$ each</span>
+                    <br>
+                    <span class="spanGreyText">you save 20% on each patent check</span>
+                </label>
+                <label class="labelForRadioInput"><input class="radioInput" type="radio" name="checked" value="1">
+                    <span>2 products for 44 usd / 22$ each</span>
+                    <br>
+                    <span class="spanGreyText" >you save 12% on each patent check</span>
+                </label>
+                <label class="labelForRadioInput lastLabel"><input class="radioInput" type="radio" name="checked" value="0">
+                    <span>1 products for 24.99 usd</span>
+                </label>
+            </div>
+            <button class="continueBtn" id="continueBtn">Continue</button>
+        </div>
+    </div>
+    <div class="modalWindow" id="modalWindowSucces">
+        <div class='formWrapper'>
+            <h2>Succesfull payment</h2>
+            <p class="PaymentParagraph">Your request has been accepted and will be processed within 24 working hours. 
+                We will send you a payment details and all information to your email.</p>
+            <img src="./img/Group 115.png" alt="" class="succPaymentImg">
+            <button class="backBtn">Back</button>
+        </div>
+    </div>
+    <div class="modalWindowPayment" id="modalWindowFailed">
+        <div class='formWrapper'>
+            <h2>Your payment failed</h2>
+            <p class="PaymentParagraph">Sorry, but we’ve having trouble processing your payment. 
+                You have been not charged for this transaction.</p>
+            <img src="./img/оплата 2.png" alt="" class="failPaymentImg">
+            <button class="backBtn redBtn">Try to pay again</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
